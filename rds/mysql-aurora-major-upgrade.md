@@ -38,6 +38,8 @@ See the tutorial <a href="create-mysql-aurora-cluster">Create an RDS Aurora MySQ
 
 # Create a snapshot
 
+using cli to get the db-cluster-identifier --> aws rds describe-db-clusters
+
 As demonstrated in <a href="mysql-aurora-snapshot.md">Creating an Aurora snapshot</a> tutorial.
 
     aws rds create-db-cluster-snapshot --db-cluster-identifier ${CLUSTER_ID} --db-cluster-snapshot-identifier ${SNAPSHOT_ID}
